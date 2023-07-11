@@ -1,0 +1,172 @@
+.productListContainer {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  border-left: 1px solid rgba(0, 0, 0, 0.158);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#productListHeading {
+  font: 400 2rem 'Roboto';
+  padding: 0.5vmax;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.637);
+  transition: all 0.5s;
+  margin: 2rem;
+  text-align: center;
+}
+
+.productListTable {
+  background-color: white;
+  /* text-align: center !important; */
+  border: none !important;
+}
+
+.productListTable div {
+  font: 300 1vmax 'Roboto';
+  color: rgba(0, 0, 0, 0.678);
+  border: none !important;
+}
+
+.productListTable a,
+.productListTable button {
+  color: rgba(0, 0, 0, 0.527);
+  transition: all 0.5s;
+}
+
+/* .productListTable a:hover {
+  color: tomato;
+} */
+
+.productListTable button:hover {
+  color: rgb(236, 30, 30);
+}
+
+.MuiDataGrid-columnHeader div {
+  color: rgb(255, 255, 255);
+}
+
+.add-link-item {
+  text-decoration: none;
+  margin: 0 0 5px 2px;
+}
+.search-input {
+  width: 20%;
+}
+h1,
+p {
+  font-family: Lato;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  position: relative;
+}
+
+thead tr th {
+  font-weight: 500;
+  text-align: left;
+  background-color: #fafafa;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+th,
+td {
+  padding: 8px;
+  overflow-wrap: break-word;
+}
+
+.pagination-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.action-icon {
+  display: flex;
+  /* align-items: center; */
+}
+.edit-icon {
+  color: #ffaf42;
+  height: 21px;
+  width: 50px;
+  margin-top: 2px !important;
+  text-decoration: none;
+  margin-right: -5px;
+  background-color: transparent !important;
+}
+.delete-icon:hover,
+.edit-icon:hover {
+  background-color: none !important;
+  transform: scaleY(1.1);
+}
+@media screen and (max-width: 600px) {
+  .productListTable div {
+    font: 300 4vw 'Roboto';
+  }
+}
+
+.pagination {
+  margin: 15px auto;
+  display: flex !important;
+  list-style: none;
+  outline: none;
+  float: right !important;
+  text-decoration: none !important;
+  justify-content: flex-end !important;
+}
+.pagination > .active > a {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff !important;
+}
+.pagination > li > a {
+  border: 1px solid #007bff;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #007bff;
+  border-color: #007bff;
+  outline: none;
+}
+.pagination > li > a,
+.pagination > li > span {
+  color: #007bff;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span,
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-radius: unset;
+}
+.pagination-div {
+  margin-right: 10rem !important;
+}
+
+/* .avatarImage:hover {
+  background: #000;
+  transform: scale(4.5);
+  transition: 0.8s ease-in-out all;
+  cursor: pointer;
+  z-index: 100;
+} */
+.modal-dialog-centered > .modal-content {
+  width: 50% !important;
+  align-items: center !important;
+  margin-left: 299px !important;
+}
+.preview-image {
+  width: 100%;
+  height: 100%;
+}
